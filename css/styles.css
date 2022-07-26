@@ -11,9 +11,9 @@
     --secondary-text-color: #757575;
     --accent-color: #2196F3;
     --nav-footer-colot: rgba(255, 255, 255, 0.6);
+    --primary-background-color: #ffffff;
     --secondary-backgound-color: #F5F4FA;
-    --footer-background: #2F303A;
-
+    --hero-footer-background: #2F303A;
 }
 
 body {
@@ -22,8 +22,29 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
-    background-color: #FFFFFF;
+   color: var(--primary-text-color);
+}
+
+/* утилітил класів */
+
+.link{
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.list{
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
 }
 
 /* logo */
@@ -37,4 +58,120 @@ body {
 
 .logo-interactive {
     color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus{
+    color: var(--accent-color);
+}
+
+.link.current{
+    color: var(--accent-color);
+}
+
+.site-nav.link:hover,
+.site-nav.link:focus{
+    color: var(--accent-color);
+}
+
+/* секція герой  */
+.hero{
+    background-color: var(--hero-footer-background);
+}
+.hero-title{
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+}
+
+.hero-button{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            min-width: 200px;
+        
+            color: #ffffff;
+            background-color: #2196f3;
+        
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.87;
+            letter-spacing: 0.06em;
+            cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    color: var(--accent-color);
+}
+
+/* наші переваги  */
+.about-us-tittle{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14 ;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+.about-us-text {
+    color: var(--secondary-text-color);
+}
+/* чим ми займаємося  */
+.decor-text{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+/* наша команда  */
+.footer-focus:hover,
+.footer-focus:focus{
+    color: var(--accent-color);
+}
+
+.comanda{
+    background: var(--secondary-backgound-color)
+}
+
+.tittle-workers{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.blak-footer{
+        width: 1600px;
+        height: 252px;
+        top: 2097px;
+        background:var(--hero-footer-background)
+}
+.name-text{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.26;
+        letter-spacing: 0.03em;
+}
+.excerpt{
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: #757575;
+}
+.logo-stule{
+    color: var(--primary-background-color)
+}
+.end{
+    color: rgba(255, 255, 255, 0.6);
+}
+.city{
+    color: var(--primary-background-color)
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,96 +17,98 @@
     <!-- Шапка  -->
     <header>
         <nav>
-        <a href="./" class="logo"><span class="logo-interactive">Web</span>Studio</a>
-            <ul>
-                <li><a href="./index.html">Студія</a></li>
-                <li><a href="./portfolio.html">Портфоліо</a></li>
-                <li><a href="">Контакти</a></li>
+        <a href="./" class="logo link "><span class="logo-interactive">Web</span>Studio</a>
+            <ul class="list  " >
+                <li><a href="./index.html" class="link current " >Студія</a></li>
+                <li><a href="./portfolio.html " class="link  site-nav " >Портфоліо</a></li>
+                <li><a href="" class="link site-nav " >Контакти</a></li>
             </ul>
-        </nav>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
-    </header>
+        <a href="mailto:info@devstudio.com"  class="link site-nav" >info@devstudio.com</a>
+        <a href="tel:+380961111111"  class="link site-nav" >+38 096 111 11 11</a>
+    </nav>
+     </header>
+ <!-- гловна інформація -->
     <main>
-        <!-- Ефективні рішення для вашого бізнесу -->
-        <section>
-            <h1>Ефективні рішення для вашого бізнесу</h1>
-            <button type="button">Замовити послугу</button>
+        <!-- секція герой -->
+        <section class="hero" >
+              <h1 class="hero-title" >Ефективні рішення для вашого бізнесу</h1>
+            <button type="button" class="hero-button" >Замовити послугу</button>
         </section>
-        <!-- Позитивні сторони -->
+
+        <!-- наші переваги -->
         <section>
-            <ul>
+            <h2 class="visually-hidden" >наші переваги</h2>
+            <ul class="list" >
                 <li>
-                    <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem
+                    <h3 class="about-us-tittle" >УВАГА ДО ДЕТАЛЕЙ</h3>
+                    <p class="about-us-text" > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem
                         velit magnam iure.</p>
                 </li>
                 <li>
-                    <h3>ПУНКТУАЛЬНІСТЬ</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem
+                    <h3 class="about-us-tittle" >ПУНКТУАЛЬНІСТЬ</h3>
+                    <p class="about-us-text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem
                         velit magnam iure.</p>
                 </li>
                 <li>
-                    <h3>ПЛАНУВАННЯ</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem
+                    <h3 class="about-us-tittle" >ПЛАНУВАННЯ</h3>
+                    <p class="about-us-text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem
                         velit magnam iure.</p>
                 </li>
                 <li>
-                    <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem
+                    <h3 class="about-us-tittle" >СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <p class="about-us-text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem
                         velit magnam iure.</p>
                 </li>
             </ul>
         </section>
+
+        <!--чим ми займаємося   -->
         <section>
-            <!-- фото роботи  -->
-            <h2>Чим ми займаємося</h2>
+            <h2 class="decor-text" >Чим ми займаємося</h2>
             <ul>
                 <li><img src="./images/img.jpg" alt="робочий стіл програміста " width="370"></li>
                 <li><img src="./images/img1.jpg" alt="ноутбук на якому пряцюють " width="370"></li>
                 <li><img src="./images/img2.jpg" alt="планшет з таблицею кольорів " width="370"></li>
             </ul>
         </section>
-        <section>
+        <section class="comanda" >
             <!-- працівники  -->
-            <h2>Наша команда</h2>
+            <h2 class="tittle-workers">Наша команда</h2>
             <ul>
-                <li>
+                <li  >
                     <img src="./goitins-hw-1/img1.jpg" alt="молодий чоловік з посмішкою" width="270" height="260">
-                    <h3>Ігор Дем’яненко</h3>
-                    <p>Product Designer</p>
+                    <h3 class="name-text" >Ігор Дем’яненко</h3>
+                    <p class="excerpt" >Product Designer</p>
                 </li>
                 <li>
                     <img src="./goitins-hw-1/img2.jpg" alt="жінка в піджаку" width="270" height="260">
-                    <h3>Ольга Репіна</h3>
-                    <p>Frontend Developer</p>
+                    <h3 class="name-text" >Ольга Репіна</h3>
+                    <p class="excerpt" >Frontend Developer</p>
                 </li>
                 <li>
                     <img src="./goitins-hw-1/img3.jpg" alt="чоловік у світлій сорочці" width="270" height="260">
-                    <h3>Микола Тарасов</h3>
-                    <p>Marketing</p>
+                    <h3 class="name-text" >Микола Тарасов</h3>
+                    <p class="excerpt" >Marketing</p>
                 </li>
                 <li>
                     <img src="./goitins-hw-1/img4.jpg" alt="чоловік в окулярах" width="270" height="260">
-                    <h3>Михайло Єрмаков</h3>
-                    <p>UI Designer</p>
+                    <h3 class="name-text" >Михайло Єрмаков</h3>
+                    <p class="excerpt" >UI Designer</p>
                 </li>
             </ul>
         </section>
-    </main>
        <footer>
-            <section>
-        <a href="/"><span>Web</span>Studio</a>
-                
-                
-                <address>
+            <section class="blak-footer"  >
+          <nav>
+        <a href="./" class="logo link logo-stule"><span class="logo-interactive ">Web</span >Studio</a>
+        </nav>
+                <address class="city" >
                      м. Київ, пр-т Лесі Українки, 26  
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
+                <a href="mailto:info@devstudio.com" class="link footer-focus end " >info@devstudio.com</a>
+                <a href="tel:+380961111111" class="link footer-focus end" >+38 096 111 11 11</a>
                 </address>
-                    
-               
             </section>
         </footer>
+    </main>
 </body>
 </html>
