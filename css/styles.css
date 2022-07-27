@@ -36,6 +36,10 @@ body {
     list-style: none;
 }
 
+address{
+    font-style: normal;
+}
+
 .visually-hidden {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);
@@ -52,7 +56,6 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: #000000;
 }
 
@@ -69,10 +72,27 @@ body {
     color: var(--accent-color);
 }
 
-.site-nav.link:hover,
+.nav-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color)
+}
+
+.contacts{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--primary-text-color);
+}
+
+/* .site-nav.link:hover,
 .site-nav.link:focus{
     color: var(--accent-color);
-}
+} */
 
 /* секція герой  */
 .hero{
@@ -113,7 +133,6 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14 ;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
@@ -122,12 +141,12 @@ body {
     color: var(--secondary-text-color);
 }
 /* чим ми займаємося  */
-.decor-text{
+.section-title{
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
         text-align: center;
-        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
 }
 
 /* наша команда  */
@@ -140,13 +159,6 @@ body {
     background: var(--secondary-backgound-color)
 }
 
-.tittle-workers{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
 
 .blak-footer{
         width: 1600px;
@@ -154,19 +166,24 @@ body {
         top: 2097px;
         background:var(--hero-footer-background)
 }
-.name-text{
+.team-title{
         font-weight: 500;
         font-size: 16px;
-        line-height: 1.26;
-        letter-spacing: 0.03em;
+        line-height: 1.18;
+        text-align: center;
+        color: var(--primary-text-color);
 }
-.excerpt{
+.team-title+p{
         font-size: 16px;
         line-height: 1.18;
-        letter-spacing: 0.03em;
-        color: #757575;
+        text-align: center;
+        color:var(--secondary-text-color)
 }
-.logo-stule{
+.logo-footer{
+    font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
     color: var(--primary-background-color)
 }
 .end{
