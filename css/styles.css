@@ -50,6 +50,10 @@ address{
     width: 1px !important;
     overflow: hidden;
 }
+.link:hover,
+.link:focus{
+    color: var(--accent-color);
+}
 
 /* logo */
 .logo {
@@ -89,15 +93,15 @@ address{
         color: var(--primary-text-color);
 }
 
-/* .site-nav.link:hover,
-.site-nav.link:focus{
-    color: var(--accent-color);
-} */
+
+} 
 
 /* секція герой  */
+
 .hero{
-    background-color: var(--hero-footer-background);
+    background: var(--hero-footer-background)
 }
+
 .hero-title{
         font-weight: 900;
         font-size: 44px;
@@ -150,10 +154,6 @@ address{
 }
 
 /* наша команда  */
-.footer-focus:hover,
-.footer-focus:focus{
-    color: var(--accent-color);
-}
 
 .comanda{
     background: var(--secondary-backgound-color)
@@ -192,3 +192,4 @@ address{
 .city{
     color: var(--primary-background-color)
 }
+
