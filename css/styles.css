@@ -222,3 +222,13 @@ address{
             text-align: center;
 }
 
+.btns:hover,
+.btns:focus{
+    color: var(--accent-color);
+}
+
+.btn:hover,
+.btn:focus{
+  background-color: #188ce8;;
+}
+
