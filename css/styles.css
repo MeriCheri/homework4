@@ -226,10 +226,12 @@ address{
 .btns:focus{
     color: var(--primary-background-color);
     background-color: #188ce8;
+    cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus{
-  background-color: #188ce8;;
+  background-color: #188ce8;
+  cursor: pointer;
 }
 
