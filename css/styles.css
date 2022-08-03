@@ -224,7 +224,8 @@ address{
 
 .btns:hover,
 .btns:focus{
-    color: var(--accent-color);
+    color: var(--primary-background-color);
+    background-color: #188ce8;
 }
 
 .btn:hover,
