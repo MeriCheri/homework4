@@ -36,11 +36,14 @@ body {
 
 .link{
     text-decoration: none;
-    color: var(--primary-text-color);
+    color: inherit;
+        font-style: normal;
 }
 
 .list{
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 address{
@@ -259,4 +262,24 @@ address{
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.card{
+    background: var(--primary-background-color);
+    box-shadow:rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    width: 270px;
+height: 368px;
+}
+.content{
+    padding-top: 30px;
+        padding-bottom: 30px;
+}
+.card-set{
+    border: #EEEEEE;
+    max-height: 404px;
+}
+
+.card-set:hover,
+.card-set:focus{
+    box-shadow: #2f303a;
 }
