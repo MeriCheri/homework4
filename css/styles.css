@@ -64,7 +64,10 @@ address{
 .link:focus{
     color: var(--accent-color);
 }
-
+/* шапка сайта  */
+.top-navigation{
+    display: flex;
+}
 /* logo */
 .border{
     border:1px solid #ececec ;
@@ -85,6 +88,10 @@ address{
     color: var(--accent-color);
 }
 
+.top-conection{
+    display: flex;
+    margin-left: 94px;
+}
 .link.current{
     color: var(--accent-color);
 }
@@ -254,6 +261,8 @@ address{
     background: var(--primary-background-color);
     box-shadow:rgba(0, 0, 0, 0.25);
     border-radius: 4px;
+   border-left: 215px;
+   border-bottom: 696px;
     width: 270px;
 height: 368px;
 }
