@@ -38,7 +38,7 @@ body {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    display: flex;
+   
 }
 /* утилітил класів */
 
@@ -76,12 +76,15 @@ address{
 /* шапка сайта  */
 .top-navigation{
     display: flex;
+    align-items: center;
 }
 /* logo */
 .border{
     border:1px solid #ececec ;
 }
 .logo {
+    padding-top: 24px ;
+    padding-bottom: 25px;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.19;
@@ -101,6 +104,19 @@ address{
     display: flex;
     margin-left: 94px;
 }
+.top-conection > .item:not(:last-child){
+    margin-right: 55px;
+}
+.top-contacts{
+    display: flex;
+    margin-left: auto; 
+    
+}
+.top-contacts > .item:not(:last-child){
+   margin-right: 50px;
+}
+
+
 .link.current{
     color: var(--accent-color);
 }
@@ -154,6 +170,7 @@ address{
 
 
 .hero-button{
+    padding: 10px 24px  ;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
             min-width: 200px;
@@ -172,11 +189,34 @@ address{
 .hero-button:focus {
     background-color: #188ce8;
 }
-
-
+/* Чим ми займаємося */
+.our-work-list{
+    display: flex;
+    flex-wrap:wrap ;
+    margin-left: -30px;
+    margin-top: -30px;
+    flex-basis: calc((100% - 30px * 3) / 3);
+} 
+.our-work-list > .item{
+    margin-left: 30px;
+    margin-top: 30px;
+}
 
 /* наші переваги  */
+.retreat{
+    padding: 94px;
+    display: flex;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+.retreat >.item{
+    flex-basis: calc((100% - 30px * 4) / 4);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
 .about-us-tittle{
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14 ;
@@ -187,20 +227,39 @@ address{
 .about-us-text {
     color: var(--secondary-text-color);
 }
-/* чим ми займаємося  */
+/* наша команда  */
 .section-title{
+    margin-bottom: 50px;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
         text-align: center;
         color: var(--primary-text-color);
 }
-
-/* наша команда  */
-
 .comanda{
     background: var(--secondary-backgound-color)
 }
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    
+    }
+.cart{
+    flex-basis: calc((100% - 30px * 4)/4);
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    background: #FFFFFF;
+box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+border-radius: 0px 0px 4px 4px;
+}
+
 
 
 .blak-footer{
@@ -263,14 +322,6 @@ address{
   cursor: pointer;
 }
 
-
-.card{
-    background: var(--primary-background-color);
-    border-radius: 4px;
-   border-left: 215px;
-   border-bottom: 696px;
-    width: 270px;
-}
 .content{
     padding-top: 30px;
         padding-bottom: 30px;
@@ -288,18 +339,9 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.cart{
-    background: #FFFFFF;
-box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
-border-radius: 0px 0px 4px 4px;
-}
-.retreat{
-    padding: 94px;
-    display: flex;
-}
+
 .fly{
     display: flex;
     margin-bottom: 56px;
    justify-content:center;
- 
 }
