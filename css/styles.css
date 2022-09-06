@@ -50,9 +50,9 @@ body {
 }
 
 .list{
-    list-style: none;
     padding: 0px;
-    margin: 0px;
+    margin: 0px; 
+     list-style: none;
 }
 
 address{
@@ -68,6 +68,16 @@ address{
     height: 1px !important;
     width: 1px !important;
     overflow: hidden;
+}
+h1,
+h3,
+h2,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
 }
 .link:hover,
 .link:focus{
