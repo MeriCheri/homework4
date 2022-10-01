@@ -128,11 +128,26 @@ ul {
 }
 
 
-.link.current{
-    color: var(--accent-color);
+.nav-link.current::after{
+    content: "";
+     position: absolute;
+     bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background: var(--accent-color);
 }
 
+.nav-link.current{
+    position: relative  ;
+   color:  var(--accent-color);
+}
+
+
 .nav-link{
+  
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -224,6 +239,29 @@ ul {
     margin-left: 30px;
     margin-top: 30px;
 }
+.item-works{
+    position: relative;
+}
+
+.our-work-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(47,
+     48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
 /* наші переваги  */
 .about-us{
@@ -303,10 +341,9 @@ border-radius: 0px 0px 4px 4px;
 
     background-color: var(--hero-footer-background);
 }
-.bg-footer.container{
+.bg-footer .container{
     justify-content: space-between;
     display: flex;
-    background-color: #757575;
 }
 .widget-blok{
 
@@ -354,6 +391,7 @@ border-radius: 0px 0px 4px 4px;
         text-align: center;
         color: var(--primary-text-color);
 }
+
 .team-title+p{
         font-size: 16px;
         line-height: 1.18;
@@ -379,7 +417,7 @@ border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
 }
 .social-icon > .social-icon-item:not(:last-child){
-    margin-left: 10px;
+    margin-right: 10px;
 
 }
 .social-icon{
@@ -446,13 +484,8 @@ height: 90px;
     border-radius: 4px;
 }
 
-
-
-
-
-
 .logo-footer{
-    display: block;
+
     margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
         font-weight: 700;
@@ -547,4 +580,6 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 .item-footer{
     margin-bottom: 10px;
   }
+
+
 
