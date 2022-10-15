@@ -26,10 +26,19 @@
                 <li class="item"><a href="./portfolio.html " class="link  nav-link current  " >Портфоліо</a></li>
                 <li class="item"><a href="" class="link contacts " >Контакти</a></li>
             </ul>
-            <ul class="list top-contacts">
-      <li class="item"> <a href="mailto:info@devstudio.com"  class="link " >info@devstudio.com</a></li> 
-       <li class="item"><a href="tel:+380961111111"  class="link  ""> +38 096 111 11 11</a></li> 
-    </ul>
+        </ul>
+        <ul class="list top-contacts">
+  <li class="item"> <use><a href="mailto:info@devstudio.com"  class="link " >
+    <svg class="icon-contacts" width="16" height="12">
+    <use href="./images/icon/sprite-defs.svg#icon-envelope"></use>
+    </svg>
+info@devstudio.com</a></li> 
+  <li class="item"><a href="tel:+380961111111"  class="link  ">
+    <svg class="icon-contacts " width="10" height="16">
+    <use href="./images/icon/sprite-defs.svg#icon-smartphone"></use>
+</svg> 
++38 096 111 11 11</a></li> 
+</ul>
 </nav>
 </div>
      </header>
@@ -52,21 +61,26 @@
             </ul>
 
             <!--  Наші проекти -->
-            <ul class="list progect-list">
+            <ul class="list progect-list" >
                 <li class="item" >
                     <a href="#" class="link " >
-                       <div ><img src="./images/img1.1.jpg" alt="Ноутбук" width="370" />
+                       <div class="" >
+                        <img src="./images/img1.1.jpg" alt="Ноутбук" width="370" />
                         </div>
+
                         <div class="description">
                             <h2 class="projects-title ">Технокряк</h2>
                         <p>Веб-сайт</p>
                     </div>
                     </a>
+                </article>
                 </li>
                 <li class="item"  >
                     <a href="#" class="link" >
-                        <div><img src="./images/img2.1.jpg" alt="Гра у баскетбол" width="370" />
+                        <div>
+                            <img src="./images/img2.1.jpg" alt="Гра у баскетбол" width="370" />
                         </div> 
+
                         <div class="description">
                     <h2 class="projects-title ">Постер New Orlean vs Golden Star</h2>
                         <p>Дизайн</p>
@@ -145,16 +159,38 @@
         </section>
         <footer class="bg-footer">
             <div class="container">
-            <nav>
-                <a href="./" class=" link logo-footer"><span class="logo-interactive ">Web</span>Studio</a>
-            </nav>
-            <address class="city">
+           <div class="widget-blok">
+          <a href="./" class="logo link logo-footer"><span class="logo-interactive ">Web</span>Studio</a>
+            <address >
                 <ul class="list">
-                    <li><a href="https://goo.gl/maps/Qx93pW3DqFM8MeQx7" class="adress link"> м. Київ, пр-т Лесі Українки, 26</a></li> 
-                      <li><a href="mailto:info@devstudio.com" class="link footer-focus end ">info@devstudio.com</a></li>  
-                       <li><a href="tel:+380961111111" class="link footer-focus end">+38 096 111 11 11</a></li>
+                    <li class="item-footer"><a href="https://goo.gl/maps/Qx93pW3DqFM8MeQx7" class="adress link" 
+                        target="_blank">
+                         м. Київ, пр-т Лесі Українки, 26</a></li> 
+                      <li class="item-footer" ><a href="mailto:info@devstudio.com"
+                         class="link footer-focus end ">info@devstudio.com</a>
+                        </li>  
+                       <li class="item-footer"><a href="tel:+380961111111" 
+                        class="link footer-focus end">+38 096 111 11 11</a>
+                    </li>
                 </ul>
             </address>
+        </div>
+        <div class="widget-blok">
+                <b class="join">Приєднюйтесь</b>
+                <ul class="list social-icon">
+                    <li class="social-icon-item" ><a href="" class="footer-icon-link"><svg class="icon">
+                        <use href="./images/icon/sprite-defs.svg#icon-instagram"></use>
+                    </svg></a></li>
+                    <li class="social-icon-item" ><a href="" class="footer-icon-link"><svg class="icon">
+                        <use href="./images/icon/sprite-defs.svg#icon-twitter"></use>
+                    </svg></a></li>
+                    <li class="social-icon-item" ><a href="" class="footer-icon-link"><svg class="icon">
+                        <use href="./images/icon/sprite-defs.svg#icon-facebook"></use>
+                    </svg></a></li>
+                    <li class="social-icon-item" ><a href="" class="footer-icon-link"><svg class="icon">
+                        <use href="./images/icon/sprite-defs.svg#icon-linkedin"></use>
+                    </svg></a></li>
+                </ul>
         </div>
     </footer>
     </main>
