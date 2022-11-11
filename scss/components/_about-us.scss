@@ -1,0 +1,40 @@
+/*Наші переваги */
+.about-us{
+    padding-top: 94px;
+}
+
+.retreat{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+.retreat >.item{
+    flex-basis: calc((100% - 30px * 4) / 4);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.about-us-tittle{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14 ;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+.about-us-text {
+    color: var(--secondary-text-color);
+}
+
+.about-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+background: #F5F4FA;
+border-radius: 4px;
+margin-bottom: 30px;
+    }
