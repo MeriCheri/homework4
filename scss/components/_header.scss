@@ -30,6 +30,9 @@
 }
 
 .top-conection{
+    @media screen and (max-width: 767.97px) {
+      display: none;
+      }
     display: flex;
     margin-left: 94px;
 }
@@ -67,6 +70,9 @@
 }
 
 .top-contacts{
+    @media screen and (max-width: 767.97px) {
+        display: none;
+        }
     display: flex;
     margin-left: auto; 
 }
@@ -90,3 +96,4 @@
     margin-right: 10px;
     fill: currentColor;
 }
+

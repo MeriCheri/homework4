@@ -1,5 +1,7 @@
 @import "./utils/utils";
 
+@import "./utils/variables";
+
 @import "./components/header";
 
 @import "./components/hero";
@@ -16,9 +18,10 @@
 
 @import "./components/footer";
 
-@import "./components/modal"
+@import "./components/modal";
 
+@import "./utils/container";
 
-
+@import "./components/mobile-menu"
 
 
