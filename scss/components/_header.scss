@@ -22,19 +22,26 @@
 
 .logo-interactive {
     color: var(--accent-color);
-}
+    @media screen and (max-width: 768px){
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 
-.logo:hover,
-.logo:focus{
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .top-conection{
-    @media screen and (max-width: 767.97px) {
-      display: none;
-      }
-    display: flex;
-    margin-left: 94px;
+    @media screen and (max-width: 767.98px) {
+        display: none;
+     }
+              @media screen and (max-width: 768px){
+margin-left: 89px;
+              }
+ display: flex;
+ margin-left: 94px;
 }
 
 .top-conection>.item:not(:last-child){
@@ -42,9 +49,6 @@
 }
 
 .nav-link{
-    padding-top: 32px;
-    padding-bottom: 32px;
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -53,6 +57,13 @@
 }
 
 /* Псевтоелемент */
+.nav-link.current{
+    position: relative;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--accent-color);
+}
 .nav-link.current::after{
     content: "";
      position: absolute;
@@ -64,19 +75,28 @@
     background: var(--accent-color);
 }
 
-.nav-link.current{
-    position: relative  ;
-   color:  var(--accent-color);
-}
+
 
 .top-contacts{
-    @media screen and (max-width: 767.97px) {
-        display: none;
-        }
     display: flex;
-    margin-left: auto; 
+    margin-left: auto;
+@media screen and (min-width: 320px) and (max-width:767.88px) {
+    .header-contacts__item{
+     display: none;
+    }      
+}
+@media screen and (min-width: 768px) and (max-width:1198.88px) {
+        // display: inline;
+        margin-left: 50px;
+    flex-direction: column;
+     }
+ @media screen and (min-width: 768px) and (max-width:1198.88px){
+   .header-contacts__item {
+    margin: 0px;
+}
 }
 
+}
 .top-contacts >.item:not(:last-child){
     margin-right: 50px;
 }
@@ -95,5 +115,7 @@
 .icon-contacts{
     margin-right: 10px;
     fill: currentColor;
+   @media screen and (min-width: 768px) and (max-width:1198.88px){
+   margin-right: 5px;
+  }
 }
-

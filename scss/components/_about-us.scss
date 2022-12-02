@@ -1,7 +1,14 @@
 /*Наші переваги */
 .about-us{
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+    }
+
 }
+
 
 .retreat{
     display: flex;
@@ -15,7 +22,7 @@
     margin-left: 30px;
   
     @media screen and (min-width: 480px) {
-        flex-basis: calc((100% - 30px * 2) / 2);
+        flex-basis: calc((100% - 30px * 1) / 1);
       }
       @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 30px * 2) / 2);
@@ -33,10 +40,29 @@
     line-height: 1.14 ;
     text-transform: uppercase;
     color: var(--primary-text-color);
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        text-align: start;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 
 .about-us-text {
+    font-size: 14px;
+    line-height: 1.14;
     color: var(--secondary-text-color);
+    
+    @media screen and (min-width: 768px) {
+        text-justify: distribute-all-lines;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-justify: distribute-all-lines;
+    }
 }
 
 .about-icon{
